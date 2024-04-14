@@ -10,7 +10,7 @@ theme.addEventListener('click', () => {
 hamburgerMenu.addEventListener('click', () => {
     navLinks.classList.toggle('show');
 });
-
+ 
 
 document.addEventListener('DOMContentLoaded', function() {
     const logoContainer = document.getElementById('logoContainer');
