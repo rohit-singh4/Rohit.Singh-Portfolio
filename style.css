@@ -222,7 +222,7 @@ body {
     display: flex;
     align-items: center;
     -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   
   .theme__fill,
@@ -430,7 +430,7 @@ body {
     padding: 8px 15px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    /* cursor: pointer; */
     margin-left: 10px;
   }
   
@@ -652,6 +652,7 @@ body {
   /* SKILL SECTION */
   .skills-section {
     margin-top: 40px;
+    text-align: center;
 }
 .skills-section h2{
     margin-top: 100px;
@@ -659,18 +660,54 @@ body {
     justify-content: center;
     align-items: center;
     font-size: xx-large;
+    cursor: pointer;
+    margin-top: 40px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition */
+}
+
+.skills-section h2:hover {
+    transform: scale(1.35); /* Scale up on hover */
 }
 
 
 .skill-subsection {
-    margin-bottom: 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    position: relative;
+    margin-right: 20px; /* Add some spacing between subsections */
+}
+.skill-subsection:last-child {
+    margin-right: 0; /* Remove right margin for the last subsection */
 }
 
 .skill-subsection h3 {
+    right: 400px;
+    font-size: 20px;
     color: #333;
     margin-bottom: 10px;
-    padding-left: 150px;
-    font-size: x-large;
+    position: relative;
+    cursor: pointer;
+}
+.skill-subsection h3::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px; /* Adjust the distance from text */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Underline height */
+    background-color: transparent;
+    transition: transform 0.3s ease; /* Add transition */
+}
+
+.skill-subsection:hover h3::after {
+    transform: scale(1.35); /* Scale up on hover */
+}
+
+.skill-subsection:hover {
+     transform: scale(1.35); /* Scale up on hover */
 }
 
 .skill-subsection ul {
@@ -696,8 +733,17 @@ body {
     margin-top: 40px;
     text-align: center;
 }
-.projects-section h2{
+
+.projects-section h2 {
+    cursor: pointer;
     font-size: xx-large;
+    margin-top: 40px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add transition */
+}
+
+.projects-section h2:hover {
+    transform: scale(1.35); /* Scale up on hover */
 }
 
 
@@ -744,3 +790,110 @@ body {
 .source-button:hover {
     background-color: #2980b9;
 }
+
+
+/* CONTACT ME SECTION */
+.contact-section {
+    margin-top: 50px;
+    text-align: center;
+    background-color:rgb(244, 239, 239); /* Light background color */
+    padding: 50px 0; /* Padding top and bottom */
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    color: gray;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.contact-section h2::after {
+    content: '';
+    display: block;
+    width: 60px; /* Underline width */
+    height: 3px; /* Underline height */
+    background-color: #3498db; /* Underline color */
+    margin: 0 auto;
+    margin-top: 10px; /* Space between text and underline */
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff; /* Form background color */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transition: transform 0.3s ease; /* Transition effect */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Transition effect */
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db; /* Button background color */
+    color:white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.contact-form button:hover {
+    background-color: #2980b9; /* Button hover background color */
+}
+
+.contact-section:hover .contact-form {
+    transform: translateY(-10px); /* Move up on hover */
+}
+/* FOOTER  */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position:relative;
+    bottom: 0;
+    width: 98%;
+    height: 75px;
+  }
+
+  /* Social links */
+  .social-links {
+    margin-bottom: 10px;
+  }
+
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  /* Developer credit */
+  .developer-credit {
+    float: right;
+  }
+
+  @media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .developer-credit {
+      float: none;
+      margin-top: 10px;
+    }
+  }
