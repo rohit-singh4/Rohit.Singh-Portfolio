@@ -624,7 +624,7 @@ body {
     align-items: center;
     color: white;
     background: #0da1f1;
-    background: linear-gradient(45deg, #5f40a6, #C1A6FC);
+    /* background: linear-gradient(45deg, #5f40a6, #C1A6FC); */
     font-size: xx-large;
   }
   
@@ -677,6 +677,10 @@ body {
     list-style-type: none;
     padding-left: 425px;
     font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 .skill-subsection ul li {
@@ -685,12 +689,17 @@ body {
     margin-bottom: 5px;
 }
 
+
   
   /* PROJECT SECTION */
   .projects-section {
     margin-top: 40px;
     text-align: center;
 }
+.projects-section h2{
+    font-size: xx-large;
+}
+
 
 .project-card {
     display: inline-block;
