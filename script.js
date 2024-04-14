@@ -1,9 +1,9 @@
-const darkModeBtn = document.getElementById('darkModeBtn');
+const theme = document.getElementById('theme');
 const body = document.body;
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const navLinks = document.querySelector('.nav-links');
 
-darkModeBtn.addEventListener('click', () => {
+theme.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
 });
 
