@@ -3,13 +3,10 @@ const body = document.body;
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const navLinks = document.querySelector('.nav-links');
 
-theme.addEventListener('click', () => {
+function toggleDarkMode() {
+    const body = document.body;
     body.classList.toggle('dark-mode');
-});
-
-hamburgerMenu.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-});
+  }
  
 
 document.addEventListener('DOMContentLoaded', function() {
