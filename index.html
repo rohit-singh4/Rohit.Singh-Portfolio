@@ -12,7 +12,7 @@
         <div class="container navbar.scrolled">
           <div class="logo" id="logoContainer">
             <img
-              src="assets/IMG-20240413-WA0003.jpg"
+              src="IMG-20240413-WA0003.jpg"
               alt="Logo"
               class="logo-img"
               id="logoImage"
@@ -41,23 +41,15 @@
                     </span>
                   </div>
                 </div> -->
-                <label for="theme" class="theme">
-                    <span class="theme__toggle-wrap">
-                        <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark">
-                        <span class="theme__fill"></span>
-                        <span class="theme__icon">
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                        </span>
-                    </span>
-                </label>
+                <!-- Dark mode toggle button -->
+  <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+    <svg class="dark-mode-toggle-icon" viewBox="0 0 24 24">
+      <path fill="none" d="M0 0h24v24H0V0z"/>
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+    </svg>
+  </button>
           </div>
         </div>
       </nav>
@@ -67,11 +59,11 @@
     <section class="about-section">
       <div class="profile-photo">
         <a
-          href="assets/WhatsApp Image 2024-04-14 at 08.42.17_ceb3d89b.jpg"
+          href="WhatsApp Image 2024-04-14 at 08.42.17_ceb3d89b.jpg"
           class="image-link"
         >
           <img
-            src="assets/WhatsApp Image 2024-04-14 at 08.42.17_ceb3d89b.jpg"
+            src="WhatsApp Image 2024-04-14 at 08.42.17_ceb3d89b.jpg"
             alt="Rohit Singh"
             class="animated-image"
         /></a>
@@ -131,7 +123,7 @@
             <h3>Backend Skills</h3>
             <ul>
                 <li><img width="45" height="45" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js"/></li>
-                <li><img width="45" height="45" src="https://img.icons8.com/color/48/express-js.png" alt="express-js"/></li>
+                <li><img width="45" height="45" src="https://img.icons8.com/color/48/express-js.png" alt="express-js" class="bg-bend"/></li>
                 <li><img width="45" height="45" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1"/></li>
                 <li><img width="64" height="64" src="https://img.icons8.com/nolan/64/react-native.png" alt="react-native"/></li>
                 <!-- Add more backend skills as needed -->
@@ -185,7 +177,7 @@
     <section class="projects-section">
         <h2>Projects <img width="45" height="45" src="https://img.icons8.com/ios/50/group-of-projects.png" alt="group-of-projects"/></h2>
         <div class="project-card">
-            <img src="assets/project-Netflix.jpg" alt="Project 1">
+            <img src="project-Netflix.jpg" alt="Project 1">
             <div class="project-info">
                 <h3>Netflix Clone</h3>
                 <p>Description of Project 1</p>
@@ -193,7 +185,7 @@
             </div>
         </div>
         <div class="project-card">
-            <img src="assets/spotify.jpeg" alt="Project 1">
+            <img src="spotify.jpeg" alt="Project 1">
             <div class="project-info">
                 <h3>Spotify Clone</h3>
                 <p>Description of Project 1</p>
